@@ -1,10 +1,9 @@
 import { get } from "../utils/https"
 
-// const invalidChars = new RegExp(/[I]/, "g")
 export const filter = (vin: string) =>
     vin
         .toUpperCase()
-        .replace("IOQ", "")
+        .replace(/[^IOQ]/, "")
         .substring(0, 17)
 
 export const validate = (vin: string): string => vin.length !== 17 && "17 chars expected"
