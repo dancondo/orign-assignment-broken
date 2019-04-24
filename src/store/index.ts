@@ -48,7 +48,6 @@ export const reducer: LoopReducer<RootState, Actions> = (state, action: Actions)
                 : extCmd({ vinCheckResult: "Loading" }, checkVinCmd(state.vin) as any)
 
         case checkVinSuccess:
-            console.log("here")
             return ext({ vinCheckResult: action.payload })
 
         default:
