@@ -40,15 +40,13 @@ button:disabled {
 h3 {
     font-weight: 400;
     text-align: center;
-    font-size: 1em;
+    font-size: .8em;
+    margin: 0;
 }
 
 @media (max-width: 600px) {
     body {
         font-size: 18px;
-    }
-    h3 {
-        font-size: .7em;
     }
     button {
         font-size: 1.2em;
